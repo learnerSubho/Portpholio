@@ -506,14 +506,14 @@
                     <div class="right-contact">
                         <form  name="submit-to-google-sheet" id="contactForm" class="contact-form">
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="YOUR NAME">
-                                <input type="email" required placeholder="YOUR EMAIL">
+                                <input name="Name" id="Name" type="text" required placeholder="YOUR NAME">
+                                <input name="Email" id="Email" type="email" required placeholder="YOUR EMAIL">
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
+                                <input name="Subject" id="Subject" type="text" required placeholder="ENTER SUBJECT">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                                <textarea name="Message" id="Message" cols="15" rows="8" placeholder="Message Here..."></textarea>
                             </div>
                             <div class="submit-btn">
                                 <button class="button">Submit</button>
@@ -551,7 +551,7 @@
     </div>
     <script src="app.js"></script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbwc97Z4-eaWVxDQSfph0WJ54WFA4_-OyF_sx2rn-CebDVbD2RXDAfzu9vW1mKqdQW3bHQ/exec'; // Replace with your Google Apps Script URL
+     const scriptURL = 'https://script.google.com/macros/s/AKfycbwc97Z4-eaWVxDQSfph0WJ54WFA4_-OyF_sx2rn-CebDVbD2RXDAfzu9vW1mKqdQW3bHQ/exec'; // Replace with your Google Apps Script URL
     const form = document.getElementById('contactForm');
 
     form.addEventListener('submit', async (e) => {
